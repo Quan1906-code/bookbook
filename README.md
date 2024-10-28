@@ -1,92 +1,44 @@
-Check Project
+-Check Project
+
 My assignments are there here is only the overview of the program
-UI Design Overview
-1. User View
+-About the UI
 
-    Login/Sign In Screen
-        Input fields for username and password.
-        A button for "Sign In" and "Sign Up".
-        A note about default user roles.
+-There will be at least 2 view 1 for librarian and 1 for user (could consider 1 more for admin who will manage all will build if there is enough time)
 
-    Dashboard
-        Notifications section for recent activities (e.g., due dates for borrowed books, new arrivals).
-        Quick links to sections: Borrowing Records, Book View, and Info Management.
+-For all 3 view there will be a log in and sign in screen upon opening the app (note that upon sign in here the account create will be User by default only admin can assign the role librarian to the account)
+-UserView
 
-    Book View
-        Search bar for books (by title, author, ISBN).
-        List of books with a "Borrow" button next to each.
-        Option to filter books by genre or availability.
+-Dashboard: this is where the user receive notification of their recent activties includes info about the returning and borrowing
 
-    Info Management
-        Display user information: name, membership status, contact info.
-        Option to edit personal details.
+-Book View: This is where the user can view and search the info about the book can also add the book into borrowing section (similar to adding product to cart in supermarket)
 
-    Borrowing Record
-        List of past and ongoing borrowing records.
-        Details for each borrowing, including return dates.
+-Info Management: here user can view info about themselves
 
-    Borrowing Cart
-        Display current items in the cart.
-        Limits displayed clearly (e.g., max of 5 books, 2 ongoing borrows).
-        Option to confirm borrowing request.
+-Borrowing Record: Here user can view the info about their past and on-going book borrowing records
 
-2. Librarian View
+-Borrowing Cart: Users are not allowed to borrow unless have membership, there can only exist 2 on-going borrowing record at a time, each borrow can't exceed 5 books
+-LibrarianView
 
-    Login/Sign In Screen
-        Similar to User view, with additional fields if needed for Librarians.
+-Dashboard:Here will show notification about number of pending book borrows, number of late returns, number of pending fines,...
 
-    Dashboard
-        Notifications for pending borrows, late returns, pending fines.
-        Quick stats (e.g., total books, total users).
+-BookView: Here Librarian can view, search,delete or edit infomation of books, add new book info to the database
 
-    Book View
-        Search bar for books.
-        List of all books with options to Edit, Delete, and Add New Book.
-        Display book status (available, borrowed, reserved).
+-Info Management: here librarian can view info about themselves
 
-    Info Management
-        Display librarian's information.
-        Options to edit details.
+-BookIssue and Resolution: Here will be where librarian report issues of book copies and record the solution for that book issue
 
-    Book Issue and Resolution
-        Form to report issues with specific book copies.
-        Dropdown to select the book and a text area for issue description.
+-Book Return: Here Librarian can appove or reject the pending borrowing and view all the borrowing in the database upon clicking a Borrowing record the librarian can view a more detailed info about that borrow viewing which book to be borrowed and if any copy available
 
-    Book Return
-        List of pending borrowing requests.
-        Options to Approve or Reject each request.
-        View detailed information about each request.
+-BookImport: Here librarian can create a book import record and the source of the book upon importing book will automatically update the number of copies
 
-    Book Import
-        Form for importing books with fields for details (title, author, quantity, source).
-        Button to submit the import, automatically updating stock.
+-Fining: Librarian can create fine for user either for damaging books or late returns and can also view the record of fining and their status
 
-    Fining
-        Form to create fines (for damage or late returns).
-        List of fines with status (pending, paid).
+-Membership: Here librarian can create membership for User
+-AdminView
 
-    Membership
-        Form to create membership for new users.
-        Option to view and manage existing memberships.
+-Dashboard:
 
-3. Admin View
+-User Management: View and can edit, delete the information of all account including user and librarian can also assign role to user
 
-    Login/Sign In Screen
-        Similar to User and Librarian views.
-
-    Dashboard
-        Overview of user activity and system stats.
-
-    User Management
-        List of all users and librarians with options to Edit, Delete.
-        Option to assign roles (user, librarian) to any account.
-
-Notes on Implementation
-
-    Design Principles: Keep the UI intuitive and user-friendly. Use clear labels and group related functionalities together. Consider a responsive design for different devices.
-
-    Feedback Mechanisms: Provide users with feedback for actions (e.g., successful borrow request, errors in form submission).
-
-    Security: Ensure secure handling of user passwords and personal information, particularly in login and user management sections.
-
-    Consistency: Maintain a consistent layout and design language across different views for ease of use.
+-NOTE
+About the UI you don't need to actually write the backend just design the UI how you see fit that still show the function required
